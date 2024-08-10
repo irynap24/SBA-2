@@ -103,6 +103,7 @@ function getIDs(learnerSubmissions) {
 
 
 
+
 // Function to generate a learner report
 function learnerReport(learnerID, assignmentGroup, learnerSubmissions) {
     let totalScore = 0;
@@ -204,10 +205,10 @@ function getLearnerData(assignmentGroup, learnerSubmissions) {
 }
 
 const reports = getLearnerData(AssignmentGroup, LearnerSubmissions);
-console.log('The report for learners is as follows:', reports);
+
+console.log(JSON.stringify(reports,0,2));  
 
 
-// [
 //     {
 //     id: 125,
 //     1: 0.94, // 47 / 50
